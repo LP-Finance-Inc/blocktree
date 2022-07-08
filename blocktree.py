@@ -54,7 +54,7 @@ class BlockTree:
                 token_symbol = token["tokenSymbol"]
                 token_img = token["tokenIcon"]
                 # Fetch Price and Calculate Token Value
-                token_price = get_price(token_symbol)
+                token_price = self.get_price(token_symbol)
                 token_value = token_price * token_amount
                 # Only add if token value > 0
                 if token_value > 0:
